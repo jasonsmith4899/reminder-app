@@ -11,10 +11,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 // 紧急度配色
-val CalmColor = androidx.compose.ui.graphics.Color(0x2E8B57)   // SeaGreen
+val CalmColor = androidx.compose.ui.graphics.Color(0xFF2E8B57)   // SeaGreen
 val NoticeColor = androidx.compose.ui.graphics.Color(0xFFC107) // Amber
 val UrgentColor = androidx.compose.ui.graphics.Color(0xFF9800) // Orange
-val CriticalColor = androidx.compose.ui.graphics.Color(0xF44336) // Red
+val CriticalColor = androidx.compose.ui.graphics.Color(0xFFF44336) // Red
 
 private val DarkColorScheme = darkColorScheme(
     primary = CalmColor,
