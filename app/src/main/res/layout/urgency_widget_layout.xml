@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/widget_bg_calm">
+
+    <!-- ── 标题行 ── -->
+    <LinearLayout
+        android:id="@+id/widget_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/widget_urgency_icon"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="6dp"
+            android:src="@android:color/transparent"
+            android:contentDescription="紧急度" />
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="提醒助手"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <!-- ── 任务列表区 ── -->
+    <LinearLayout
+        android:id="@+id/widget_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Row 0 -->
+        <LinearLayout
+            android:id="@+id/widget_task_row_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/widget_task_color_0"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="6dp"
+                android:src="@android:color/transparent"
+                android:contentDescription="紧急度色块" />
+
+            <TextView
+                android:id="@+id/widget_task_title_0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/widget_task_countdown_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <ImageButton
+                android:id="@+id/widget_task_complete_0"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_check"
+                android:background="@android:color/transparent"
+                android:contentDescription="标记完成"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:id="@+id/widget_task_row_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/widget_task_color_1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="6dp"
+                android:src="@android:color/transparent"
+                android:contentDescription="紧急度色块" />
+
+            <TextView
+                android:id="@+id/widget_task_title_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/widget_task_countdown_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <ImageButton
+                android:id="@+id/widget_task_complete_1"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_check"
+                android:background="@android:color/transparent"
+                android:contentDescription="标记完成"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:id="@+id/widget_task_row_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/widget_task_color_2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="6dp"
+                android:src="@android:color/transparent"
+                android:contentDescription="紧急度色块" />
+
+            <TextView
+                android:id="@+id/widget_task_title_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/widget_task_countdown_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <ImageButton
+                android:id="@+id/widget_task_complete_2"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_check"
+                android:background="@android:color/transparent"
+                android:contentDescription="标记完成"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:id="@+id/widget_task_row_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/widget_task_color_3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="6dp"
+                android:src="@android:color/transparent"
+                android:contentDescription="紧急度色块" />
+
+            <TextView
+                android:id="@+id/widget_task_title_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/widget_task_countdown_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <ImageButton
+                android:id="@+id/widget_task_complete_3"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_check"
+                android:background="@android:color/transparent"
+                android:contentDescription="标记完成"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <!-- Row 4 -->
+        <LinearLayout
+            android:id="@+id/widget_task_row_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/widget_task_color_4"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="6dp"
+                android:src="@android:color/transparent"
+                android:contentDescription="紧急度色块" />
+
+            <TextView
+                android:id="@+id/widget_task_title_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/widget_task_countdown_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <ImageButton
+                android:id="@+id/widget_task_complete_4"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_check"
+                android:background="@android:color/transparent"
+                android:contentDescription="标记完成"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ── 空状态 ── -->
+    <TextView
+        android:id="@+id/widget_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一切正常，无待办到期"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp" />
+
+    <!-- ── 底部新建按钮 ── -->
+    <Button
+        android:id="@+id/widget_new_btn"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="新建任务"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        android:background="@android:color/transparent"
+        android:minHeight="0dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" />
+</LinearLayout>
